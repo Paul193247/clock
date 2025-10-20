@@ -519,7 +519,7 @@ function set_num(grid, pos, num) {
       animate_clock(
         row[i + offset],
         { hours: h, minutes: m },
-        60000,
+        300000,
         randomDelay
       );
     }
@@ -529,11 +529,16 @@ function set_num(grid, pos, num) {
     bottomRow = grid[7];
   for (let y = 0; y < 17; y++) {
     const randomDelay = Math.random() * 800;
-    animate_clock(topRow[y], { hours: 7.5, minutes: 37.5 }, 60000, randomDelay);
+    animate_clock(
+      topRow[y],
+      { hours: 7.5, minutes: 37.5 },
+      300000,
+      randomDelay
+    );
     animate_clock(
       bottomRow[y],
       { hours: 7.5, minutes: 37.5 },
-      60000,
+      300000,
       randomDelay
     );
   }
@@ -542,7 +547,7 @@ function set_num(grid, pos, num) {
     animate_clock(
       grid[y + 1][8],
       { hours: 7.5, minutes: 37.5 },
-      60000,
+      300000,
       randomDelay
     );
   }
