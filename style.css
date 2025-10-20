@@ -13,7 +13,7 @@ body {
 /* Refined clock design with modern aesthetic */
 .clock {
   background: radial-gradient(circle at 35% 35%, #2a2a2a, #1a1a1a);
-  width: min(9vh, 4.5vw);
+  width: min(10.5vh, 5vw);
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   border: 0.3vh solid rgba(255, 255, 255, 0.08);
@@ -39,13 +39,14 @@ body {
 }
 
 /* Modern hour hand with refined styling */
+/* Extended hour hand to reach closer to edge (28% -> 45%) and adjusted top position */
 .hour-hand {
   position: absolute;
   z-index: 6;
   width: 5.5%;
-  height: 28%;
+  height: 45%;
   background: linear-gradient(to bottom, #e0e0e0, #a0a0a0);
-  top: 22%;
+  top: 5%;
   left: 50%;
   transform-origin: 50% 100%;
   transform: translate(-50%, -100%) rotate(0deg);
@@ -56,13 +57,14 @@ body {
 }
 
 /* Modern minute hand with refined styling */
+/* Extended minute hand to reach the edge (38% -> 50%) and adjusted top position */
 .minute-hand {
   position: absolute;
   z-index: 6;
   width: 4%;
-  height: 38%;
+  height: 50%;
   background: linear-gradient(to bottom, #ffffff, #c0c0c0);
-  top: 12%;
+  top: 0%;
   left: 50%;
   transform-origin: 50% 100%;
   transform: translate(-50%, -100%) rotate(0deg);
@@ -87,7 +89,7 @@ span {
 /* Refined grid layout with better spacing */
 .clock-grid {
   display: grid;
-  gap: 1.5vh;
+  gap: 0.5vh;
   padding: 4vh;
   grid-template-columns: repeat(auto-fit, minmax(9vh, 1fr));
   justify-items: center;
